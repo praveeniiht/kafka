@@ -12,3 +12,6 @@ kafka-server-start.bat ..\..\config\server.properties
 kafka-topics --zookeeper 192.168.99.100:2181 --create --topic first_topic --partitions 3 --replication-factor 1
 kafka-console-producer --broker-list 127.0.0.1:9092 --topic first_topic
 kafka-console-consumer --bootstrap-server 127.0.0.1:9092 --topic first_topic
+
+kafka-console-consumer --bootstrap-server localhost:9092 --topic first_topic --group mygroup
+
