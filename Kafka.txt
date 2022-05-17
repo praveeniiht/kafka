@@ -15,7 +15,7 @@ kafka-console-consumer --bootstrap-server 127.0.0.1:9092 --topic first_topic
 
 kafka-console-consumer --bootstrap-server localhost:9092 --topic first_topic --group mygroup
 
-kafka-console-producer --brooker-list localhost:9092, localhost:9093, localhost:9094 --topic first_topic
-kafka-console-consumer --bootstrap-server localhost:9092 --topic first_topic
+kafka-console-producer --brooker-list 127.0.0.1:9092, 127.0.0.2:9093, 127.0.0.3:9094 --topic first_topic
+kafka-console-consumer --bootstrap-server 127.0.0.1:9092, 127.0.0.2:9093, 127.0.0.3:9094 --topic first_topic
 
 
