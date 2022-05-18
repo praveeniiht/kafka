@@ -20,3 +20,5 @@ kafka-console-consumer --bootstrap-server 127.0.0.1:9092, 127.0.0.2:9093, 127.0.
 
 kafka-topics --zookeeper 127.0.0.1:2181 --topic first-topic --describe
 
+kafka-consumer-groups --bootstrap-server 127.0.0.1:9092 -describe --group mygroup
+
