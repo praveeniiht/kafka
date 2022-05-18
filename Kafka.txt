@@ -29,6 +29,8 @@ Kafka-consumer-groups –bootstrap-server localhost:9092 --group mygroup --reset
 
 kafka-consumer-groups.sh  --bootstrap-server localhost:9092 --group mygroup --reset-offsets --shift-by -2 --execute --topic first-topic:0
 
+kafka-topics --alter --zookeeper localhost:2181 --topic first_topic --partitions 5
+
 
 
 993492223740000675
