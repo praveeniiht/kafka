@@ -23,7 +23,12 @@ kafka-topics --zookeeper 127.0.0.1:2181 --topic first-topic --describe
 kafka-consumer-groups --bootstrap-server 127.0.0.1:9092 -describe --group mygroup
 kafka-consumer-groups --bootstrap-server localhost:9092 --group  mygroup --reset-offsets --to-earliest --execute --topic first_topic
 
+kafka-consumer-groups --bootstrap-server localhost:9092 --group  mygroup --reset-offsets --shift-by -2  --execute --topic first_topic
+
 Kafka-consumer-groups –bootstrap-server localhost:9092 --group mygroup --reset-offsets --shift-by -2 --execute --topic first_topic
+
+kafka-consumer-groups.sh  --bootstrap-server localhost:9092 --group mygroup --reset-offsets --shift-by -2 --execute --topic first-topic:0
+
 
 
 993492223740000675
